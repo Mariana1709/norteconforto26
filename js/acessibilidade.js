@@ -1068,7 +1068,7 @@ const nav = document.querySelector("header nav");
 /* criar botão */
 const searchHeaderBtn = document.createElement("button");
 searchHeaderBtn.id = "searchHeaderBtn";
-searchHeaderBtn.innerHTML = `<img src="../img/search.png" alt="Pesquisar">`;
+searchHeaderBtn.innerHTML = `<img src="${imagePath("search.png")}" alt="Pesquisar">`;
 
 /* inserir ao lado do último link (Contactos) */
 nav.appendChild(searchHeaderBtn);
