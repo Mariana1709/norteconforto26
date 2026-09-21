@@ -1,0 +1,616 @@
+/* =========================================================
+   PÁGINA INICIAL
+   ========================================================= */
+
+
+/* =========================================================
+   HERO
+   ========================================================= */
+
+.hero-inicio {
+    background-color: #00296b28;
+    padding: 85px 0;
+}
+
+.hero-inicio-texto {
+    width: 85%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.inicio-etiqueta {
+    display: inline-block;
+    color: #00296B;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 1.8px;
+    margin-bottom: 15px;
+}
+
+.hero-inicio h1 {
+    margin: 0 0 20px;
+    color: #00296B;
+    font-size: 52px;
+    line-height: 1.15;
+    font-weight: 700;
+}
+
+.hero-inicio p {
+    max-width: 760px;
+    margin: 0;
+    color: #596573;
+    font-size: 18px;
+    line-height: 1.8;
+}
+
+
+/* =========================================================
+   BOTÕES HERO
+   ========================================================= */
+
+.hero-botoes {
+    display: flex;
+    gap: 15px;
+    margin-top: 30px;
+}
+
+.hero-botoes a {
+    padding: 14px 24px;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 600;
+    transition: 0.3s ease;
+}
+
+.botao-principal {
+    background-color: #00296B;
+    color: #ffffff;
+}
+
+.botao-principal:hover {
+    background-color: #153f70;
+    transform: translateY(-2px);
+}
+
+.botao-secundario {
+    border: 2px solid #d97706;
+    color: #92400e;
+    background-color: #fff7ed;
+    box-shadow: 0 5px 14px rgba(217, 119, 6, 0.18);
+    font-weight: 700;
+}
+
+.botao-secundario:hover {
+    background-color: #d97706;
+    color: #ffffff;
+    border-color: #d97706;
+    transform: translateY(-2px);
+}
+
+.botao-secundario:focus-visible {
+    outline: 3px solid #fbbf24;
+    outline-offset: 3px;
+}
+
+
+/* =========================================================
+   INTRODUÇÃO
+   ========================================================= */
+
+.inicio-intro {
+    width: 85%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 90px 0 70px;
+
+    display: grid;
+    grid-template-columns: 0.9fr 1.1fr;
+    gap: 80px;
+}
+
+.inicio-intro h2 {
+    margin: 0;
+    color: #00296B;
+    font-size: 36px;
+    line-height: 1.25;
+}
+
+.inicio-intro-texto p {
+    margin: 0 0 18px;
+    color: #596573;
+    font-size: 16px;
+    line-height: 1.8;
+}
+
+
+/* =========================================================
+   LINKS
+   ========================================================= */
+
+.link-seta {
+    display: inline-block;
+    margin-top: 10px;
+    color: #00296B;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.link-seta:hover {
+    color: #153f70;
+}
+
+
+/* =========================================================
+   NÚMEROS
+   ========================================================= */
+
+.inicio-numeros {
+    max-width: 1200px;
+    width: 85%;
+    margin: 0 auto;
+    padding: 45px 0;
+
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.numero-inicio {
+    text-align: center;
+    padding: 20px;
+    border-right: 1px solid #d9dfe7;
+}
+
+.numero-inicio:last-child {
+    border-right: none;
+}
+
+.numero-inicio strong {
+    display: block;
+    color: #00296B;
+    font-size: 38px;
+    margin-bottom: 8px;
+}
+
+.numero-inicio span {
+    color: #596573;
+    font-size: 15px;
+}
+
+
+/* =========================================================
+   SERVIÇOS
+   ========================================================= */
+
+.inicio-servicos {
+    padding: 90px 7.5%;
+    background-color: #f4f6f8;
+}
+
+
+/* Título da secção */
+
+.section-heading {
+    max-width: 850px;
+    margin: 0 auto 50px;
+    text-align: center;
+}
+
+.section-heading h2 {
+    margin: 0 0 15px;
+    color: #00296B;
+    font-size: 34px;
+    line-height: 1.3;
+}
+
+.section-heading p {
+    margin: 0;
+    color: #626d79;
+    font-size: 16px;
+    line-height: 1.7;
+}
+
+.section-heading strong {
+    color: #00296B;
+    font-weight: 700;
+}
+
+
+/* Grelha */
+
+.inicio-servicos-grid {
+    max-width: 1200px;
+    margin: 0 auto;
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+
+/* Cartões */
+
+.inicio-servico-card {
+    padding: 35px 30px;
+    background-color: #ffffff;
+    border-top: 4px solid #00296B;
+
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+.inicio-servico-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 30px rgba(0, 41, 107, 0.08);
+}
+
+.inicio-servico-card > span {
+    display: block;
+    margin-bottom: 25px;
+
+    color: #9aa6b5;
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+.inicio-servico-card h3 {
+    margin: 0 0 15px;
+
+    color: #00296B;
+    font-size: 20px;
+}
+
+.inicio-servico-card p {
+    margin: 0;
+
+    color: #596573;
+    font-size: 14px;
+    line-height: 1.7;
+}
+
+
+/* Link */
+
+.inicio-servicos-link {
+    max-width: 1200px;
+    margin: 30px auto 0;
+}
+
+
+/* =========================================================
+   DIFERENCIAIS
+   ========================================================= */
+
+.inicio-diferenciais {
+    width: 85%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 90px 0;
+}
+
+.diferenciais-intro {
+    max-width: 700px;
+    margin-bottom: 50px;
+}
+
+.diferenciais-intro h2 {
+    margin: 0 0 18px;
+
+    color: #00296B;
+    font-size: 36px;
+    line-height: 1.25;
+}
+
+.diferenciais-intro p {
+    margin: 0;
+
+    color: #596573;
+    font-size: 16px;
+    line-height: 1.8;
+}
+
+.diferenciais-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.diferencial-card {
+    padding: 30px 25px;
+
+    border-top: 1px solid #ccd3d9;
+
+    transition:
+        transform 0.3s ease,
+        border-color 0.3s ease;
+}
+
+.diferencial-card:hover {
+    transform: translateY(-5px);
+    border-top-color: #00296B;
+}
+
+.diferencial-card > span {
+    display: block;
+    margin-bottom: 25px;
+
+    color: #00296B;
+    font-size: 12px;
+    font-weight: 700;
+}
+
+.diferencial-card h3 {
+    margin: 0 0 12px;
+
+    color: #00296B;
+    font-size: 19px;
+}
+
+.diferencial-card p {
+    margin: 0;
+
+    color: #626d79;
+    font-size: 14px;
+    line-height: 1.7;
+}
+
+
+/* =========================================================
+   FRASE
+   ========================================================= */
+
+.inicio-frase {
+    padding: 75px 30px;
+
+    background-color: #00296B;
+    text-align: center;
+}
+
+.inicio-frase p {
+    max-width: 900px;
+    margin: 0 auto 20px;
+
+    color: #ffffff;
+    font-size: 30px;
+    line-height: 1.4;
+    font-weight: 500;
+}
+
+.inicio-frase span {
+    color: #cbd7e8;
+    font-size: 13px;
+    letter-spacing: 2px;
+}
+
+
+/* =========================================================
+   CTA
+   ========================================================= */
+
+.inicio-cta {
+    width: 85%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 80px 0;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+}
+
+.inicio-cta > div span {
+    color: #153f70;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+.inicio-cta h2 {
+    margin: 12px 0;
+
+    color: #00296B;
+    font-size: 32px;
+}
+
+.inicio-cta p {
+    margin: 0;
+
+    color: #596573;
+    font-size: 16px;
+}
+
+.inicio-cta > a {
+    flex-shrink: 0;
+
+    padding: 15px 28px;
+
+    background-color: #00296B;
+    color: #ffffff;
+
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 600;
+
+    transition: 0.3s ease;
+}
+
+.inicio-cta > a:hover {
+    background-color: #153f70;
+    transform: translateY(-2px);
+}
+
+
+/* =========================================================
+   ANIMAÇÕES
+   ========================================================= */
+
+.scroll-reveal {
+    opacity: 0;
+    transform: translateY(35px);
+
+    transition:
+        opacity 0.8s ease,
+        transform 0.8s ease;
+}
+
+.scroll-reveal.active {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+
+.scroll-title {
+    opacity: 0;
+    transform: translateY(25px);
+
+    transition:
+        opacity 0.9s ease,
+        transform 0.9s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.scroll-title.active {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+
+.scroll-card {
+    opacity: 0;
+    transform: translateY(30px);
+
+    transition:
+        opacity 0.7s ease,
+        transform 0.7s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.scroll-card.active {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+
+.scroll-delay-1 {
+    transition-delay: 0.1s;
+}
+
+.scroll-delay-2 {
+    transition-delay: 0.2s;
+}
+
+.scroll-delay-3 {
+    transition-delay: 0.3s;
+}
+
+
+/* =========================================================
+   RESPONSIVO
+   ========================================================= */
+
+@media (max-width: 1000px) {
+
+    .inicio-servicos-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .diferenciais-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .inicio-intro {
+        grid-template-columns: 1fr;
+        gap: 35px;
+    }
+
+}
+
+
+@media (max-width: 700px) {
+
+    .hero-inicio {
+        padding: 60px 0;
+    }
+
+
+    .hero-inicio-texto,
+    .inicio-intro,
+    .inicio-numeros,
+    .inicio-diferenciais,
+    .inicio-cta {
+        width: 90%;
+    }
+
+
+    .hero-inicio h1 {
+        font-size: 38px;
+    }
+
+    .hero-inicio p {
+        font-size: 16px;
+    }
+
+
+    .hero-botoes {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+
+    .inicio-intro {
+        padding: 65px 0;
+    }
+
+
+    .inicio-intro h2,
+    .diferenciais-intro h2 {
+        font-size: 28px;
+    }
+
+
+    .inicio-numeros {
+        grid-template-columns: 1fr;
+        gap: 10px;
+    }
+
+
+    .numero-inicio {
+        border-right: none;
+        border-bottom: 1px solid #d9dfe7;
+    }
+
+    .numero-inicio:last-child {
+        border-bottom: none;
+    }
+
+
+    .inicio-servicos {
+        padding: 65px 5%;
+    }
+
+
+    .inicio-servicos-grid,
+    .diferenciais-grid {
+        grid-template-columns: 1fr;
+    }
+
+
+    .inicio-frase p {
+        font-size: 23px;
+    }
+
+
+    .inicio-cta {
+        padding: 65px 0;
+
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+
+    .inicio-cta h2 {
+        font-size: 27px;
+    }
+
+}

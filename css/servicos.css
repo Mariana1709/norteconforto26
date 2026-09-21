@@ -1,0 +1,483 @@
+/* =========================================================
+   HERO - SERVIÇOS
+   ========================================================= */
+
+.hero-servicos {
+    background-color: #00296b28;
+    padding: 55px 0;
+}
+
+.hero-text-servicos {
+    width: 85%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.servicos-etiqueta {
+    display: inline-block;
+    color: #00296B;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 1.8px;
+    margin-bottom: 12px;
+}
+
+.hero-text-servicos h1 {
+    margin: 0 0 15px;
+    color: #00296B;
+    font-size: 38px;
+    font-weight: 700;
+}
+
+.hero-text-servicos p {
+    max-width: 800px;
+    margin: 0;
+    color: #596573;
+    font-size: 18px;
+    line-height: 1.7;
+}
+
+
+/* =========================================================
+   INTRODUÇÃO
+   ========================================================= */
+
+.servicos-intro {
+    width: 85%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 75px 0 55px;
+}
+
+.servicos-intro-text {
+    max-width: 850px;
+}
+
+.servicos-intro h2 {
+    margin: 0 0 20px;
+    color: #00296B;
+    font-size: 32px;
+    line-height: 1.25;
+}
+
+.servicos-intro p {
+    margin: 0 0 14px;
+    color: #626d79;
+    font-size: 16px;
+    line-height: 1.8;
+}
+
+
+/* =========================================================
+   TÍTULOS DAS SECÇÕES
+   ========================================================= */
+
+.section-heading {
+    max-width: 850px;
+    margin: 0 auto 45px;
+    text-align: center;
+}
+
+.section-heading h2 {
+    margin: 0 0 15px;
+    color: #00296B;
+    font-size: 32px;
+    line-height: 1.3;
+}
+
+.section-heading p {
+    margin: 0 0 12px;
+    color: #626d79;
+    font-size: 16px;
+    line-height: 1.7;
+}
+
+.section-heading strong {
+    color: #00296B;
+    font-weight: 700;
+}
+
+.avac-explicacao {
+    max-width: 760px;
+    margin-left: auto !important;
+    margin-right: auto !important;
+}
+
+
+/* =========================================================
+   ÁREAS DE INTERVENÇÃO
+   ========================================================= */
+
+.servicos-principais {
+    width: 85%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 30px 0 90px;
+}
+
+.servicos-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 18px;
+}
+
+
+/* =========================================================
+   CARTÕES DOS SERVIÇOS
+   ========================================================= */
+
+.servico-card {
+    position: relative;
+    background-color: #f4f6f8;
+    border-top: 3px solid #00296B;
+    transition:
+        background-color 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+.servico-botao {
+    width: 100%;
+    min-height: 125px;
+    padding: 28px 35px;
+
+    border: none;
+    background: transparent;
+
+    display: grid;
+    grid-template-columns: 55px 1fr 35px;
+    align-items: center;
+
+    text-align: left;
+    cursor: pointer;
+
+    font-family: inherit;
+}
+
+.servico-numero {
+    color: #9aa6b5;
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+.servico-titulo {
+    color: #00296B;
+    font-size: 21px;
+    font-weight: 700;
+    line-height: 1.3;
+}
+
+.servico-icon {
+    width: 32px;
+    height: 32px;
+
+    border: 1px solid #ccd3d9;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    color: #00296B;
+    font-size: 23px;
+    font-weight: 300;
+
+    transition:
+        transform 0.3s ease,
+        background-color 0.3s ease,
+        color 0.3s ease;
+}
+
+
+/* Hover */
+
+.servico-card:hover {
+    background-color: #eef2f5;
+    box-shadow: 0 10px 25px rgba(0, 41, 107, 0.07);
+}
+
+
+/* =========================================================
+   TEXTO EXPANDIDO
+   ========================================================= */
+
+.servico-texto {
+    max-height: 0;
+    overflow: hidden;
+
+    opacity: 0;
+
+    padding: 0 35px;
+
+    transition:
+        max-height 0.45s ease,
+        opacity 0.3s ease,
+        padding 0.45s ease;
+}
+
+.servico-card.aberto .servico-texto {
+    max-height: 800px;
+    opacity: 1;
+
+    padding: 0 35px 30px;
+}
+
+.servico-texto p {
+    margin: 0 0 14px;
+
+    color: #596573;
+    font-size: 15px;
+    line-height: 1.8;
+}
+
+.servico-detalhe {
+    margin-top: 22px;
+    padding-top: 18px;
+
+    border-top: 1px solid #d9dfe7;
+
+    color: #00296B;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+
+/* Cartão aberto */
+
+.servico-card.aberto {
+    box-shadow: 0 10px 25px rgba(0, 41, 107, 0.08);
+}
+
+.servico-card.aberto .servico-icon {
+    background-color: #00296B;
+    color: #fff;
+    transform: rotate(45deg);
+}
+
+
+/* =========================================================
+   ABORDAGEM / PROCESSO
+   ========================================================= */
+
+.servicos-processo {
+    width: 85%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 90px 0;
+}
+
+.processo-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.processo-item {
+    padding: 30px 25px;
+
+    border-top: 1px solid #ccd3d9;
+
+    transition:
+        transform 0.3s ease,
+        border-color 0.3s ease;
+}
+
+.processo-item:hover {
+    transform: translateY(-5px);
+    border-top-color: #00296B;
+}
+
+.processo-numero {
+    display: block;
+    margin-bottom: 30px;
+
+    color: #00296B;
+    font-size: 12px;
+    font-weight: 700;
+}
+
+.processo-item h3 {
+    margin: 0 0 12px;
+
+    color: #00296B;
+    font-size: 19px;
+}
+
+.processo-item p {
+    margin: 0;
+
+    color: #626d79;
+    font-size: 14px;
+    line-height: 1.7;
+}
+
+
+/* =========================================================
+   ANIMAÇÕES AO FAZER SCROLL
+   ========================================================= */
+
+.scroll-reveal {
+    opacity: 0;
+    transform: translateY(35px);
+
+    transition:
+        opacity 0.8s ease,
+        transform 0.8s ease;
+}
+
+.scroll-reveal.active {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.scroll-delay-1 {
+    transition-delay: 0.1s;
+}
+
+.scroll-delay-2 {
+    transition-delay: 0.2s;
+}
+
+.scroll-delay-3 {
+    transition-delay: 0.3s;
+}
+
+.scroll-delay-4 {
+    transition-delay: 0.4s;
+}
+
+
+.scroll-title {
+    opacity: 0;
+    transform: translateY(25px);
+
+    transition:
+        opacity 0.9s ease,
+        transform 0.9s cubic-bezier(.22, 1, .36, 1);
+}
+
+.scroll-title.active {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+
+.scroll-card {
+    opacity: 0;
+    transform: translateY(30px);
+
+    transition:
+        opacity 0.7s ease,
+        transform 0.7s cubic-bezier(.22, 1, .36, 1);
+}
+
+.scroll-card.active {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+
+
+/* =========================================================
+   RESPONSIVO
+   ========================================================= */
+
+@media (max-width: 1000px) {
+
+    .servicos-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .processo-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+
+}
+
+
+@media (max-width: 700px) {
+
+    .hero-servicos {
+        padding: 45px 0;
+    }
+
+    .hero-text-servicos h1 {
+        font-size: 32px;
+    }
+
+    .hero-text-servicos p {
+        font-size: 16px;
+    }
+
+
+    .servicos-intro {
+        padding: 60px 0 40px;
+    }
+
+    .servicos-intro h2,
+    .section-heading h2 {
+        font-size: 27px;
+    }
+
+
+    .servicos-grid,
+    .processo-grid {
+        grid-template-columns: 1fr;
+    }
+
+
+    .servicos-principais {
+        padding-bottom: 70px;
+    }
+
+    .servicos-processo {
+        padding: 70px 0;
+    }
+
+}
+
+
+@media (max-width: 600px) {
+
+    .hero-text-servicos,
+    .servicos-intro,
+    .servicos-principais,
+    .servicos-processo {
+        width: 90%;
+    }
+
+
+    .servico-botao {
+        min-height: 105px;
+        padding: 25px 22px;
+
+        grid-template-columns: 40px 1fr 32px;
+        gap: 10px;
+    }
+
+    .servico-titulo {
+        font-size: 18px;
+    }
+
+
+    .servico-texto {
+        padding-left: 22px;
+        padding-right: 22px;
+    }
+
+    .servico-card.aberto .servico-texto {
+        padding-left: 22px;
+        padding-right: 22px;
+        padding-bottom: 25px;
+    }
+
+
+    .servico-texto p {
+        font-size: 14px;
+    }
+
+
+    .processo-grid {
+        grid-template-columns: 1fr;
+    }
+
+}

@@ -1,0 +1,543 @@
+/* BOTÃO FLUTUANTE */
+#acBtn{
+position:fixed;
+right:20px;
+bottom:20px;
+
+background:transparent;
+border:none;
+
+width:auto;
+height:auto;
+
+cursor:pointer;
+z-index:99999;
+padding:0;
+}
+
+/* OVERLAY */
+#acOverlay{
+display:none;
+position:fixed;
+inset:0;
+background:rgba(0,0,0,.45);
+z-index:99998;
+}
+#acBtn img{
+
+width: 70px;
+height:70px;
+
+object-fit:contain;
+
+}
+/* PAINEL */
+#acPanel {
+
+    display: none;
+
+    position: fixed;
+
+    top: 0;
+    right: 0;
+
+    width: 420px;
+    height: 100vh;
+
+    background: #fff;
+
+    padding: 20px;
+
+    overflow-y: auto;
+    overflow-x: hidden;
+
+    z-index: 99999;
+
+    box-shadow: -5px 0 20px rgba(0,0,0,.15);
+
+    border-radius: 0;
+
+    box-sizing: border-box;
+
+}
+#acPanel h2{
+margin:0 0 25px;
+font-size:24px;
+}
+
+.acTitulo{
+font-size:16px;
+font-weight:700;
+margin:25px 0 15px;
+}
+
+.acCard{
+border:1px solid #ddd;
+padding:20px;
+border-radius:15px;
+}
+
+.acLeitor{
+display:flex;
+align-items:center;
+gap:15px;
+}
+
+.acIcon{
+width:36px;
+height:36px;
+border-radius:50%;
+display:flex;
+align-items:center;
+justify-content:center;
+cursor:pointer;
+font-size:16px;
+color:#153f70;
+}
+
+#acProgress{
+flex:1;
+height:10px;
+background:#ddd;
+border-radius:10px;
+overflow:hidden;
+cursor:pointer;
+}
+
+#acProgressBar{
+height:100%;
+width:0%;
+background:#153f70;
+}
+
+#acTempo{
+font-size:14px;
+min-width:60px;
+}
+
+#acClose{
+font-size:22px;
+cursor:pointer;
+color:#153f70;
+font-weight:bold;
+}
+
+#acSlider{
+width:100%;
+margin:20px 0;
+}
+
+.acZoomBtns{
+display:flex;
+gap:10px;
+}
+
+.acZoomBtns button{
+flex:1;
+padding:10px;
+border:none;
+background:#f1edf4;
+border-radius:10px;
+cursor:pointer;
+font-size:16px;
+}
+
+.acCor{
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:20px;
+}
+
+.acCor button{
+padding:14px;
+border:1px solid #ddd;
+background:#fff;
+border-radius:12px;
+font-size:15px;
+cursor:pointer;
+}
+
+#acResetAll{
+width:100%;
+margin-top:20px;
+padding:12px;
+border:none;
+background:#153f70;
+color:white;
+font-size:16px;
+border-radius:12px;
+cursor:pointer;
+}
+.acIcon img{
+
+width:30px;
+height:30px;
+
+object-fit:contain;
+
+pointer-events:none;
+
+}
+.acHeader{
+
+display:flex;
+
+justify-content:space-between;
+
+align-items:center;
+
+margin-bottom:16px;
+
+}
+
+.acHeader h2{
+
+margin:0;
+
+font-size:16px;
+
+font-weight:700;
+
+}
+
+#acFecharPainel{
+
+font-size:28px;
+
+cursor:pointer;
+
+width:40px;
+height:40px;
+
+display:flex;
+align-items:center;
+justify-content:center;
+
+border-radius:50%;
+
+transition:.2s;
+
+}
+
+#acFecharPainel:hover{
+
+background:#eee;
+
+}
+/* ==========================================
+   BOTÃO NO HEADER
+========================================== */
+
+#searchHeaderBtn {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  margin-left: 15px;
+  display: flex;
+  align-items: center;
+}
+
+#searchHeaderBtn img {
+  width: 28px;
+  height: 28px;
+}
+
+/* ==========================================
+   OVERLAY
+========================================== */
+
+#searchOverlay {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.5);
+  z-index: 99998;
+}
+
+/* ==========================================
+   MODAL
+========================================== */
+
+#searchModal {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 90%;
+  max-width: 600px;
+  background: #fff;
+  padding: 20px;
+  border-radius: 15px;
+  z-index: 99999;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+}
+
+/* HEADER MODAL */
+.searchHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+/* INPUT */
+#searchInput {
+  width: 100%;
+  padding: 12px;
+  margin: 15px 0;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+
+/* BUTTON */
+#searchBtn {
+  width: 100%;
+  padding: 12px;
+  background: #153f70;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+/* RESULTADOS */
+.searchItem {
+  padding: 15px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+.searchItem:hover {
+  background: #f5f5f5;
+}
+
+/* FECHAR */
+#closeSearch {
+  font-size: 22px;
+  cursor: pointer;
+}
+
+/* DESTAQUE */
+.mark {
+  background: #153f706d;
+  padding: 2px 4px;
+  border-radius: 4px;
+  font-weight: bold;
+}
+
+#searchResults {
+  max-height: 300px;
+  overflow-y: auto;
+  margin-top: 15px;
+
+  /* importante para scroll suave */
+  scrollbar-width: thin;
+}
+
+/* ==========================================
+   TEMA ESCURO GLOBAL
+========================================== */
+
+body.dark-mode {
+  background-color: #101820 !important;
+  color: #e7eef4 !important;
+}
+
+body.dark-mode main,
+body.dark-mode .servicos-intro,
+body.dark-mode .empresa-historia,
+body.dark-mode .missao-visao,
+body.dark-mode .contactos-container,
+body.dark-mode .acessibilidade-container {
+  background-color: #101820 !important;
+}
+
+body.dark-mode .hero-inicio,
+body.dark-mode .hero-empresa,
+body.dark-mode .hero-servicos,
+body.dark-mode .hero-contactos,
+body.dark-mode .hero-portfolio,
+body.dark-mode .hero-parceiros,
+body.dark-mode .hero-acessibilidade {
+  background-color: #1a3344 !important;
+}
+
+body.dark-mode h1,
+body.dark-mode h2,
+body.dark-mode h3,
+body.dark-mode .hero-text-portfolio,
+body.dark-mode .hero-text-parceiros,
+body.dark-mode .hero-text-acessibilidade,
+body.dark-mode .hero-text-empresa,
+body.dark-mode .hero-text-servicos,
+body.dark-mode .hero-text-contactos {
+  color: #f4f8fb !important;
+}
+
+body.dark-mode p,
+body.dark-mode .empresa-texto,
+body.dark-mode .info-item p,
+body.dark-mode .hero-text-portfolio p,
+body.dark-mode .hero-text-parceiros p,
+body.dark-mode .hero-text-acessibilidade p,
+body.dark-mode .hero-text-empresa p,
+body.dark-mode .hero-text-servicos p,
+body.dark-mode .hero-text-contactos p {
+  color: #b9c9d4 !important;
+}
+
+body.dark-mode .inicio-etiqueta,
+body.dark-mode .empresa-etiqueta,
+body.dark-mode .servicos-etiqueta,
+body.dark-mode .hero-empresa-etiqueta,
+body.dark-mode .hero-contactos-etiqueta,
+body.dark-mode .hero-text-acessibilidade h1,
+body.dark-mode .hero-text-portfolio h1,
+body.dark-mode .hero-text-parceiros h1,
+body.dark-mode .section-heading strong,
+body.dark-mode .link-seta,
+body.dark-mode .card-numero,
+body.dark-mode .processo-numero,
+body.dark-mode .servico-numero,
+body.dark-mode .diferencial-card > span,
+body.dark-mode .inicio-servico-card > span,
+body.dark-mode .valor-card span {
+  color: #67b8e8 !important;
+}
+
+body.dark-mode .inicio-servicos,
+body.dark-mode .empresa-valores {
+  background-color: #172630 !important;
+}
+
+body.dark-mode .numero-inicio,
+body.dark-mode .diferencial-card,
+body.dark-mode .processo-item,
+body.dark-mode .empresa-historia {
+  border-color: #304653 !important;
+}
+
+body.dark-mode .inicio-servico-card,
+body.dark-mode .missao-visao-card,
+body.dark-mode .valor-card,
+body.dark-mode .servico-card,
+body.dark-mode .intro-card,
+body.dark-mode .abrir-painel,
+body.dark-mode .contacto-acessibilidade,
+body.dark-mode .card {
+  background-color: #1b2b36 !important;
+  color: #e7eef4 !important;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.2);
+}
+
+body.dark-mode .inicio-servico-card,
+body.dark-mode .servico-card {
+  border-top-color: #4da7d6 !important;
+}
+
+body.dark-mode .citacao {
+  background-color: #1a3344 !important;
+  border-left-color: #4da7d6 !important;
+  color: #dcecf5 !important;
+}
+
+body.dark-mode .servico-card:hover,
+body.dark-mode .servico-card.aberto,
+body.dark-mode .inicio-servico-card:hover,
+body.dark-mode .valor-card:hover {
+  background-color: #223b4a !important;
+}
+
+body.dark-mode .servico-titulo,
+body.dark-mode .inicio-servico-card h3,
+body.dark-mode .diferencial-card h3,
+body.dark-mode .valor-card h3,
+body.dark-mode .processo-item h3,
+body.dark-mode .dados-contacto h2,
+body.dark-mode .info-item strong {
+  color: #f4f8fb !important;
+}
+
+body.dark-mode .servico-icon {
+  border-color: #48616f !important;
+  color: #dcecf5 !important;
+}
+
+body.dark-mode .servico-card.aberto .servico-icon {
+  background-color: #347da8 !important;
+  color: #ffffff !important;
+}
+
+body.dark-mode .servico-detalhe {
+  border-top-color: #405865 !important;
+  color: #8ed0f1 !important;
+}
+
+body.dark-mode .empresa-cta,
+body.dark-mode .inicio-cta,
+body.dark-mode .servicos-processo {
+  background-color: #101820 !important;
+}
+
+body.dark-mode .empresa-cta > a,
+body.dark-mode .inicio-cta > a,
+body.dark-mode .abrir-painel button {
+  background-color: #347da8 !important;
+  color: #ffffff !important;
+}
+
+body.dark-mode .empresa-cta > a:hover,
+body.dark-mode .inicio-cta > a:hover,
+body.dark-mode .abrir-painel button:hover {
+  background-color: #4da7d6 !important;
+}
+
+/* Painel de acessibilidade e pesquisa */
+
+body.dark-mode #acPanel,
+body.dark-mode #searchModal {
+  background-color: #172630 !important;
+  color: #e7eef4 !important;
+}
+
+body.dark-mode .acCard,
+body.dark-mode #searchInput,
+body.dark-mode .searchItem {
+  background-color: #1b2b36 !important;
+  border-color: #405865 !important;
+  color: #e7eef4 !important;
+}
+
+body.dark-mode .acTitulo,
+body.dark-mode #acPanel h2,
+body.dark-mode .searchHeader,
+body.dark-mode #closeSearch {
+  color: #f4f8fb !important;
+}
+
+body.dark-mode .acCor button,
+body.dark-mode .acZoomBtns button {
+  background-color: #223b4a !important;
+  border-color: #48616f !important;
+  color: #e7eef4 !important;
+}
+
+body.dark-mode #acResetAll,
+body.dark-mode #searchBtn {
+  background-color: #347da8 !important;
+}
+
+body.dark-mode #acFecharPainel:hover,
+body.dark-mode .searchItem:hover {
+  background-color: #294656 !important;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  body,
+  body * {
+    transition-duration: 0.01ms !important;
+  }
+}

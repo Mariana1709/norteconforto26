@@ -1,0 +1,138 @@
+/* CONTACTOS - NORTECONFORTO */
+
+
+
+.hero-contactos {
+    background-color: #00296b28;
+    padding: 55px 0; /* Mantenha 55px idêntico ao .hero-empresa */
+  
+}
+
+.hero-text-contactos {
+    width: 85%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.hero-contactos-etiqueta {
+    display: inline-block;
+    color: #00296B;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 1.8px;
+    margin-bottom: 12px;
+}
+
+.hero-text-contactos h1 {
+    margin: 0 0 15px;
+    color: #00296B;
+    font-size: 38px;
+    font-weight: 700;
+}
+
+.hero-text-contactos p {
+    max-width: 800px; 
+    margin: 0;
+    color: #596573;
+    font-size: 18px;
+    line-height: 1.7;
+}
+
+
+/* SECÇÃO CONTACTOS */
+
+.contactos-container {
+    width: 85%;
+    max-width: 1200px;
+    margin: 60px auto;
+    display: flex;
+    gap: 50px;
+    align-items: flex-start;
+    box-sizing: border-box;
+}
+
+.contactos-info {
+    flex: 1;
+    width: 100%;
+}
+
+.mapa iframe {
+    width: 100%;
+    border-radius: 8px;
+    display: block;
+}
+
+.dados-contacto {
+    margin-top: 30px;
+}
+
+.dados-contacto h2 {
+    color: #00296B;
+    font-size: 28px;
+    margin-bottom: 25px;
+}
+
+.info-item {
+    margin-bottom: 20px;
+}
+
+.info-item strong {
+    color: #00296B;
+    font-weight: 700;
+    display: block;
+    margin-bottom: 5px;
+    font-size: 16px;
+}
+
+.info-item p {
+    margin: 0;
+    color: #596573;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+
+/*  RESPONSIVO TABLET */
+
+@media (max-width: 900px) {
+    .contactos-container {
+        flex-direction: column;
+        padding: 0;
+    }
+
+    .contactos-info {
+        width: 100%;
+    }
+}
+
+
+/* RESPONSIVO MOBILE */
+
+@media (max-width: 600px) {
+    /* HERO MOBILE */
+    .hero-contactos {
+        padding: 45px 0;
+    }
+
+    .hero-text-contactos {
+        width: 90%;
+    }
+
+    .hero-text-contactos h1 {
+        font-size: 32px;
+    }
+
+    .hero-text-contactos p {
+        font-size: 16px;
+    }
+
+    /* CONTEÚDO MOBILE */
+    .contactos-container {
+        width: 90%;
+        margin: 40px auto;
+    }
+
+    .dados-contacto h2 {
+        font-size: 24px;
+    }
+}

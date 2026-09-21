@@ -1,0 +1,447 @@
+/* EMPRESA */
+
+.hero-empresa {
+    background-color: #00296b28;
+    padding: 55px 0;
+}
+
+.hero-text-empresa {
+    width: 85%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.hero-empresa-etiqueta {
+    display: inline-block;
+    color: #00296B;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 1.8px;
+    margin-bottom: 12px;
+}
+
+.hero-text-empresa h1 {
+    margin: 0 0 15px;
+    color: #00296B;
+    font-size: 38px;
+    font-weight: 700;
+}
+
+.hero-text-empresa p {
+    max-width: 800px;
+    margin: 0;
+    color: #596573;
+    font-size: 18px;
+    line-height: 1.7;
+}
+
+
+/* CONTEÚDO DA PÁGINA EMPRESA */
+
+.empresa-historia {
+    width: 85%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 80px 0;
+
+    display: grid;
+    grid-template-columns: 0.9fr 1.1fr;
+    gap: 80px;
+
+    border-top: 1px solid #e5e7eb;
+}
+
+
+/* ETIQUETAS DAS SECÇÕES */
+
+.empresa-etiqueta {
+    display: inline-block;
+    color: #153f70;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    margin-bottom: 18px;
+}
+
+
+/* HISTÓRIA */
+
+.empresa-historia h2,
+.missao-visao h2,
+.valores-intro h2 {
+    color: #00296B;
+    font-size: 36px;
+    line-height: 1.2;
+    margin: 0 0 25px;
+}
+
+.texto-destaque {
+    font-size: 20px;
+    line-height: 1.7;
+    color: #263547;
+    margin: 0;
+}
+
+.empresa-texto {
+    color: #555f6c;
+}
+
+.empresa-texto p {
+    font-size: 16px;
+    line-height: 1.8;
+    margin: 0 0 20px;
+}
+
+.empresa-texto strong {
+    color: #00296B;
+}
+
+
+/* CITAÇÃO / DESTAQUE*/
+
+.citacao {
+    grid-column: 1 / -1;
+
+    margin: 25px 0 0;
+    padding: 30px 40px;
+
+    background-color: #00296b18;
+    border-left: 5px solid #00296B;
+    border-radius: 0 8px 8px 0;
+
+    color: #153f70;
+    font-size: 20px;
+    font-weight: 600;
+    font-style: italic;
+    line-height: 1.5;
+
+    box-sizing: border-box;
+}
+
+
+/* MISSÃO E VISÃO */
+
+.missao-visao {
+    width: 85%;
+    max-width: 1200px;
+    margin: 0 auto;
+
+    padding: 45px 0 65px;
+
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+}
+
+.missao-visao-card {
+    position: relative;
+
+    padding: 45px;
+
+    background-color: #f4f6f8;
+    border-top: 4px solid #00296B;
+
+    box-sizing: border-box;
+}
+
+.card-numero {
+    display: block;
+
+    color: #9aa6b5;
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 2px;
+
+    margin-bottom: 30px;
+}
+
+.missao-visao-card h2 {
+    color: #00296B;
+    font-size: 30px;
+    margin: 0 0 20px;
+}
+
+.missao-visao-card p {
+    color: #596573;
+    font-size: 16px;
+    line-height: 1.8;
+    margin: 0 0 18px;
+}
+
+
+/* VALORES */
+
+.empresa-valores {
+    padding: 75px 7.5% 90px;
+    background-color: #f4f6f8;
+    box-sizing: border-box;
+}
+
+.valores-intro {
+    max-width: 1200px;
+    margin: 0 auto 40px;
+}
+
+.valores-intro h2 {
+    margin-bottom: 10px;
+}
+
+.valores-intro p {
+    max-width: 650px;
+
+    color: #596573;
+    font-size: 17px;
+    line-height: 1.7;
+
+    margin: 0;
+}
+
+.valores-grid {
+    max-width: 1200px;
+    margin: 0 auto;
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.valor-card {
+    background-color: #ffffff;
+
+    padding: 35px 30px;
+
+    border-bottom: 3px solid transparent;
+
+    transition:
+        transform 0.3s ease,
+        border-color 0.3s ease;
+
+    box-sizing: border-box;
+}
+
+.valor-card:hover {
+    transform: translateY(-5px);
+    border-bottom-color: #00296B;
+}
+
+.valor-card span {
+    display: block;
+
+    color: #153f70;
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 2px;
+
+    margin-bottom: 20px;
+}
+
+.valor-card h3 {
+    color: #00296B;
+    font-size: 20px;
+    margin: 0 0 15px;
+}
+
+.valor-card p {
+    color: #626d79;
+    font-size: 15px;
+    line-height: 1.7;
+    margin: 0;
+}
+
+
+/* CTA */
+
+.empresa-cta {
+    width: 85%;
+    max-width: 1200px;
+
+    margin: 0 auto;
+    padding: 80px 0;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    gap: 40px;
+}
+
+.empresa-cta-text {
+    flex: 1;
+}
+
+
+/* ANIMAÇÕES AO FAZER SCROLL */
+
+.scroll-reveal {
+    opacity: 0;
+    transform: translateY(35px);
+
+    transition:
+        opacity 0.8s ease,
+        transform 0.8s ease;
+}
+
+.scroll-reveal.active {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+
+/* TÍTULOS */
+
+.scroll-title {
+    opacity: 0;
+    transform: translateY(25px);
+
+    transition:
+        opacity 0.9s ease,
+        transform 0.9s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.scroll-title.active {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+
+/* CARDS */
+
+.scroll-card {
+    opacity: 0;
+    transform: translateY(30px);
+
+    transition:
+        opacity 0.7s ease,
+        transform 0.7s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.scroll-card.active {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+
+/* ATRASOS */
+
+.scroll-delay-1 {
+    transition-delay: 0.1s;
+}
+
+.scroll-delay-2 {
+    transition-delay: 0.2s;
+}
+
+.scroll-delay-3 {
+    transition-delay: 0.3s;
+}
+
+.scroll-delay-4 {
+    transition-delay: 0.4s;
+}
+
+
+/* RESPONSIVO */
+
+@media (max-width: 900px) {
+
+    .empresa-historia {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+
+    .valores-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .empresa-cta {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+}
+
+
+/* MOBILE */
+
+@media (max-width: 600px) {
+
+    /* HERO */
+
+    .hero-empresa {
+        padding: 45px 0;
+    }
+
+    .hero-text-empresa {
+        width: 90%;
+    }
+
+    .hero-text-empresa h1 {
+        font-size: 32px;
+    }
+
+    .hero-text-empresa p {
+        font-size: 16px;
+    }
+
+
+    /* HISTÓRIA */
+
+    .empresa-historia {
+        width: 90%;
+        padding: 60px 0;
+    }
+
+    .empresa-historia h2,
+    .valores-intro h2 {
+        font-size: 28px;
+    }
+
+    .texto-destaque {
+        font-size: 18px;
+    }
+
+
+    /* CITAÇÃO */
+
+    .citacao {
+        padding: 25px 25px;
+        font-size: 18px;
+    }
+
+
+    /* MISSÃO / VISÃO */
+
+    .missao-visao {
+        width: 90%;
+        grid-template-columns: 1fr;
+        padding: 60px 0;
+    }
+
+    .missao-visao-card {
+        padding: 30px 25px;
+    }
+
+
+    /* VALORES */
+
+    .empresa-valores {
+        padding: 60px 5%;
+    }
+
+    .valores-grid {
+        grid-template-columns: 1fr;
+    }
+
+
+    /* CTA */
+
+    .empresa-cta {
+        width: 90%;
+        padding: 60px 0;
+    }
+
+    .empresa-cta h2 {
+        font-size: 27px;
+    }
+
+}
